@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hoppercodes.devoter.MainActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#e3e3e3"
+        android:layout_width="944dp"
+        android:layout_height="447dp"
+
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <RelativeLayout
+            android:layout_width="558dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Devoter Time Machine"
+                android:textSize="20sp"
+                android:textColor="#333333"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editRollno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Name"
+                android:inputType="text|textPersonName" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Email Address"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editMarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Message to yourself, delivered in a year"
+                android:inputType="textLongMessage"
+                android:selectAllOnFocus="false"
+                android:singleLine="false" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Delete" />
+
+            <Button
+                android:id="@+id/btnModify"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="modify" />
+
+            <Button
+                android:id="@+id/btnView"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/btnViewAll"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="View All" />
+
+            <Button
+                android:id="@+id/btnShowInfo"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Show Info" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
