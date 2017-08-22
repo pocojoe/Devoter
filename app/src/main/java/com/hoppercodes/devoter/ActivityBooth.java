@@ -13,8 +13,7 @@ import android.widget.EditText;
 public class ActivityBooth extends Activity implements OnClickListener
 {
     EditText editAuthorName, editAuthorEmailAddress, editAuthorEmailMessage;
-    Button getBtnAdd = (Button)findViewById(R.id.btnAdd),btnAdd;
-    Button getBtnClear = (Button)findViewById(R.id.btnClear),btnClear;
+    Button btnAdd, btnClear;
     SQLiteDatabase db;
     /** Called when the activity is first created. */
     @Override
@@ -25,6 +24,8 @@ public class ActivityBooth extends Activity implements OnClickListener
         editAuthorName =(EditText)findViewById(R.id.editAuthorName);
         editAuthorEmailAddress =(EditText)findViewById(R.id.editAuthorEmailAddress);
         editAuthorEmailMessage =(EditText)findViewById(R.id.editAuthorEmailMessage);
+        btnAdd=(Button)findViewById(R.id.btnAdd);
+        btnClear=(Button)findViewById(R.id.btnClear);
         btnAdd.setOnClickListener(this);
         btnClear.setOnClickListener(this);
         db=openOrCreateDatabase("DevoterDB", Context.MODE_PRIVATE, null);
