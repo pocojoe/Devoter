@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hoppercodes.devoter.MainActivity">
+    tools:context="com.hoppercodes.devoter.ActivityBooth">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -67,35 +67,14 @@
                 android:layout_width="126dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Add" />
+                android:text="Save Entry" />
 
             <Button
-                android:id="@+id/btnDelete"
+                android:id="@+id/btnClear"
                 android:layout_width="126dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Delete" />
-
-            <Button
-                android:id="@+id/btnView"
-                android:layout_width="128dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="View" />
-
-            <Button
-                android:id="@+id/btnViewAll"
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="View All" />
-
-            <Button
-                android:id="@+id/btnShowInfo"
-                android:layout_width="134dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Show Info" />
+                android:text="Clear Entry" />
 
 
         </LinearLayout>

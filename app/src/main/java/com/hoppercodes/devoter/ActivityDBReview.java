@@ -14,15 +14,15 @@ import android.widget.EditText;
 
 //public class MainActivity extends AppCompatActivity {
 
- //   @Override
- //   protected void onCreate(Bundle savedInstanceState) {
- //       super.onCreate(savedInstanceState);
- //       setContentView(R.layout.activity_main);
- //   }
+//   @Override
+//   protected void onCreate(Bundle savedInstanceState) {
+//       super.onCreate(savedInstanceState);
+//       setContentView(R.layout.activity_main);
+//   }
 //}
 
 
-public class MainActivity extends Activity implements OnClickListener
+public class ActivityDBReview extends Activity implements OnClickListener
 {
     EditText editAuthorName, editAuthorEmailAddress, editAuthorEmailMessage;
     Button btnAdd,btnDelete,btnModify,btnView,btnViewAll,btnShowInfo;
@@ -32,7 +32,7 @@ public class MainActivity extends Activity implements OnClickListener
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_dbreview);
         editAuthorName =(EditText)findViewById(R.id.editAuthorName);
         editAuthorEmailAddress =(EditText)findViewById(R.id.editAuthorEmailAddress);
         editAuthorEmailMessage =(EditText)findViewById(R.id.editAuthorEmailMessage);
