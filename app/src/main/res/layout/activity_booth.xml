@@ -13,8 +13,8 @@
         android:background="#e3e3e3"
 
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="5dp">
 
         <RelativeLayout
             android:layout_width="558dp"

@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Environment;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -28,7 +29,12 @@ public class ActivityBooth extends Activity implements OnClickListener
         btnClear=(Button)findViewById(R.id.btnClear);
         btnAdd.setOnClickListener(this);
         btnClear.setOnClickListener(this);
-        db=openOrCreateDatabase("DevoterDB", Context.MODE_PRIVATE, null);
+        String DB_PATH = Environment.getExternalStorageDirectory().getPath().toString();
+        String DB_NAME = "DevoterDB";
+        String DB_FQN = DB_PATH+"/"+DB_NAME;
+        // String DB_FQN="DevoterDB";
+        // showMessage("devoterDB Fully Qualified Name", DB_FQN);
+        db=openOrCreateDatabase(DB_FQN, Context.MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS delayEmail(auName VARCHAR,auEmail VARCHAR,auMessage VARCHAR);");
     }
     public void onClick(View view)
